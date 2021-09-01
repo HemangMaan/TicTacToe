@@ -7,8 +7,28 @@
     android:gravity="center"
     tools:context=".MainActivity">
 
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/tableRow"
+        android:layout_width="295dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="30pt"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="cursive"
+            android:gravity="center"
+            android:text="TicTacToe"
+            android:textSize="96sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
     <TableRow
-        android:layout_width="match_parent"
+        android:layout_width="286dp"
         android:layout_height="93dp"
         android:gravity="center">
 
@@ -29,12 +49,22 @@
 
     <TableRow
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="25dp"
         android:layout_marginTop="3pt"
         android:gravity="center">
 
         <Button
             android:id="@+id/button1"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="40dp"
+            android:layout_height="40pt"
+            android:layout_marginStart="3pt"
+            android:background="@color/white"
+            android:gravity="center|center_horizontal|center_vertical"
+            android:onClick="buClick" />
+
+        <Button
+            android:id="@+id/button2"
             style="?android:attr/buttonBarButtonStyle"
             android:layout_width="40pt"
             android:layout_height="40pt"
@@ -43,22 +73,13 @@
             android:onClick="buClick" />
 
         <Button
-            android:id="@+id/button2"
-            android:layout_width="40pt"
-            android:layout_height="40pt"
-            android:layout_marginStart="3pt"
-            android:background="@color/white"
-            android:onClick="buClick"
-            style="?android:attr/buttonBarButtonStyle" />
-
-        <Button
             android:id="@+id/button3"
+            style="?android:attr/buttonBarButtonStyle"
             android:layout_width="40pt"
             android:layout_height="40pt"
             android:layout_marginStart="3pt"
             android:background="@color/white"
-            android:onClick="buClick"
-            style="?android:attr/buttonBarButtonStyle" />
+            android:onClick="buClick" />
     </TableRow>
 
     <TableRow
@@ -69,30 +90,30 @@
 
         <Button
             android:id="@+id/button4"
+            style="?android:attr/buttonBarButtonStyle"
             android:layout_width="40pt"
             android:layout_height="40pt"
             android:layout_marginStart="3pt"
             android:background="@color/white"
-            android:onClick="buClick"
-            style="?android:attr/buttonBarButtonStyle" />
+            android:onClick="buClick" />
 
         <Button
             android:id="@+id/button5"
+            style="?android:attr/buttonBarButtonStyle"
             android:layout_width="40pt"
             android:layout_height="40pt"
             android:layout_marginStart="3pt"
             android:background="@color/white"
-            android:onClick="buClick"
-            style="?android:attr/buttonBarButtonStyle" />
+            android:onClick="buClick" />
 
         <Button
             android:id="@+id/button6"
+            style="?android:attr/buttonBarButtonStyle"
             android:layout_width="40pt"
             android:layout_height="40pt"
             android:layout_marginStart="3pt"
             android:background="@color/white"
-            android:onClick="buClick"
-            style="?android:attr/buttonBarButtonStyle" />
+            android:onClick="buClick" />
     </TableRow>
 
     <TableRow
@@ -103,30 +124,30 @@
 
         <Button
             android:id="@+id/button7"
+            style="?android:attr/buttonBarButtonStyle"
             android:layout_width="40pt"
             android:layout_height="40pt"
             android:layout_marginStart="3pt"
             android:background="@color/white"
-            android:onClick="buClick"
-            style="?android:attr/buttonBarButtonStyle" />
+            android:onClick="buClick" />
 
         <Button
             android:id="@+id/button8"
+            style="?android:attr/buttonBarButtonStyle"
             android:layout_width="40pt"
             android:layout_height="40pt"
             android:layout_marginStart="3pt"
             android:background="@color/white"
-            android:onClick="buClick"
-            style="?android:attr/buttonBarButtonStyle" />
+            android:onClick="buClick" />
 
         <Button
             android:id="@+id/button9"
+            style="?android:attr/buttonBarButtonStyle"
             android:layout_width="40pt"
             android:layout_height="40pt"
             android:layout_marginStart="3pt"
             android:background="@color/white"
-            android:onClick="buClick"
-            style="?android:attr/buttonBarButtonStyle" />
+            android:onClick="buClick" />
     </TableRow>
 
 </TableLayout>
